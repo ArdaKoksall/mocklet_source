@@ -1,0 +1,9 @@
+{
+  "crypto": 0,
+  "roi": 1,
+  "transaction": 2,
+  "transactionType": 3,
+  "userdata": 4,
+  "usercrypto": 5,
+  "usersettings": 6
+}
