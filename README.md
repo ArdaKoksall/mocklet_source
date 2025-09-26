@@ -1,95 +1,222 @@
-# Mocklet
+# 🪙 Mocklet
 
-A Flutter-based cryptocurrency tracking and wallet application that provides users with real-time crypto data, portfolio management, and more.
+> _A comprehensive cryptocurrency tracking and portfolio management application built with Flutter_
 
-## Features
+Mocklet is a feature-rich mobile application that empowers users to track cryptocurrency markets, manage their digital portfolios, and stay informed about the latest trends in the crypto world. With real-time data integration, intuitive design, and robust security features, Mocklet provides everything you need for effective cryptocurrency management.
 
-- **User Authentication**: Secure login and signup with Firebase Auth and Google Sign-In
-- **Cryptocurrency Tracking**: Real-time data from CoinGecko API
-- **Portfolio Management**: Track your crypto holdings and wallet
-- **Search Functionality**: Easily search for cryptocurrencies
-- **Multi-language Support**: Localization with easy_localization
-- **Offline Storage**: Local data persistence with Hive
-- **Charts and Analytics**: Visualize crypto trends with Syncfusion charts
+---
 
-## Screenshots
+## ✨ Key Features
 
-_(Add screenshots here if available)_
+### 🔐 **Secure Authentication**
 
-## Getting Started
+- Firebase Authentication integration
+- Google Sign-In support
+- Secure user data protection
+
+### 📊 **Real-Time Market Data**
+
+- Live cryptocurrency prices via CoinGecko API
+- Comprehensive market statistics
+- Historical price charts and analytics
+
+### 💼 **Portfolio Management**
+
+- Track your crypto holdings
+- Monitor portfolio performance
+- Detailed asset allocation insights
+
+### 🔍 **Advanced Search**
+
+- Quick cryptocurrency search
+- Filter and sort capabilities
+- Comprehensive coin information
+
+### 🌍 **Multi-Language Support**
+
+- Available in 6 languages (EN, DE, ES, FR, IT, TR)
+- Easy localization with dynamic language switching
+- Region-specific formatting
+
+### 📱 **Modern UI/UX**
+
+- Clean, intuitive interface
+- Smooth animations and transitions
+- Responsive design for all screen sizes
+
+### 🔄 **Offline Capabilities**
+
+- Local data caching with Hive
+- Offline portfolio access
+- Seamless online/offline synchronization
+
+---
+
+## 📱 Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="screenshots/image1.jpg" alt="Dashboard" width="200"/>
+        <br/><b>Dashboard</b>
+      </td>
+      <td align="center">
+        <img src="screenshots/image2.jpg" alt="Markets" width="200"/>
+        <br/><b>Markets</b>
+      </td>
+      <td align="center">
+        <img src="screenshots/image3.jpg" alt="Portfolio" width="200"/>
+        <br/><b>Portfolio</b>
+      </td>
+      <td align="center">
+        <img src="screenshots/image4.jpg" alt="Settings" width="200"/>
+        <br/><b>Settings</b>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## 🚀 Quick Start
 
 ### Prerequisites
 
-- Flutter SDK (^3.8.1)
+- Flutter SDK (3.8.1 or higher)
 - Dart SDK
-- Android Studio or Xcode for mobile development
+- Android Studio / VS Code
+- Firebase project setup
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository**
 
    ```bash
    git clone https://github.com/ArdaKoksall/mocklet_source.git
    cd mocklet_source
    ```
 
-2. Install dependencies:
+2. **Install dependencies**
 
    ```bash
    flutter pub get
    ```
 
-### Running the App
+3. **Configure Firebase**
 
-For Android:
+   - Add your `google-services.json` (Android) and `GoogleService-Info.plist` (iOS)
+   - Update Firebase configuration as needed
 
-```bash
-flutter run
-```
+4. **Run the application**
 
-For iOS:
+   ```bash
+   # For development
+   flutter run
 
-```bash
-flutter run --flavor development
-```
+   # For release build
+   flutter build apk --release
+   ```
 
-## Project Structure
+---
+
+## 🏗️ Architecture
+
+The project follows clean architecture principles with a well-organized structure:
 
 ```
 lib/
-├── api/           # API services
-├── app/           # Core app logic and services
-├── models/        # Data models
-├── screens/       # UI screens
-│   ├── first/     # Authentication screens
-│   └── second/    # Main app screens
-└── main.dart      # App entry point
+├── 📁 api/              # API services and endpoints
+├── 📁 app/              # Core application logic
+│   ├── core/            # Business logic (Brain)
+│   ├── data/            # Constants and themes
+│   └── service/         # App services (Hive, Preferences, Theme)
+├── 📁 models/           # Data models and types
+│   ├── cached/          # Cached data models
+│   └── runtime/         # Runtime data models
+├── 📁 screens/          # UI screens and components
+│   ├── first/           # Authentication flow
+│   └── second/          # Main application screens
+└── 📄 main.dart         # Application entry point
 ```
 
-## Dependencies
+---
 
-Key dependencies include:
+## 🛠️ Technology Stack
 
-- Firebase for authentication and analytics
-- Riverpod for state management
-- Dio for HTTP requests
-- Hive for local storage
-- Syncfusion for charts
-- Video player for tutorials
+### **Core Framework**
 
-## Contributing
+- **Flutter** - Cross-platform UI framework
+- **Dart** - Programming language
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+### **State Management**
 
-## License
+- **Riverpod** - Reactive state management
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+### **Backend & Authentication**
 
-## Acknowledgments
+- **Firebase Core** - Backend platform
+- **Firebase Auth** - User authentication
+- **Firebase Analytics** - App analytics
+- **Firebase Crashlytics** - Crash reporting
 
-- CoinGecko API for cryptocurrency data
-- Flutter community for amazing documentation and packages
+### **Data & Storage**
+
+- **Hive** - Local NoSQL database
+- **Shared Preferences** - Simple key-value storage
+- **Dio** - HTTP client for API requests
+
+### **UI & Experience**
+
+- **Syncfusion Charts** - Professional charts and graphs
+- **Flutter Animate** - Smooth animations
+- **Cached Network Image** - Optimized image loading
+- **Video Player** - Video content support
+
+### **Localization & Utilities**
+
+- **Easy Localization** - Multi-language support
+- **Country Flags** - Flag displays
+- **URL Launcher** - External link handling
+- **Email Validator** - Input validation
+
+### **Monetization**
+
+- **Google Mobile Ads** - Advertisement integration
+
+---
+
+## 📊 Features Overview
+
+| Feature               | Description               | Status      |
+| --------------------- | ------------------------- | ----------- |
+| 🔐 Authentication     | Firebase + Google Sign-In | ✅ Complete |
+| 📈 Real-time Data     | CoinGecko API integration | ✅ Complete |
+| 💼 Portfolio Tracking | Holdings management       | ✅ Complete |
+| 📊 Charts & Analytics | Interactive price charts  | ✅ Complete |
+| 🌍 Multi-language     | 6 languages supported     | ✅ Complete |
+| 📱 Responsive Design  | All screen sizes          | ✅ Complete |
+| 🔄 Offline Mode       | Local data caching        | ✅ Complete |
+| 🎯 Ad Integration     | Google Mobile Ads         | ✅ Complete |
+
+---
+
+## 📄 License
+
+This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- **[CoinGecko](https://www.coingecko.com/)** - Comprehensive cryptocurrency API
+- **[Firebase](https://firebase.google.com/)** - Backend infrastructure and services
+- **[Flutter Community](https://flutter.dev/community)** - Amazing ecosystem and resources
+- **[Syncfusion](https://www.syncfusion.com/)** - Professional chart components
+
+---
+
+<div align="center">
+  <p>Made with ❤️ using Flutter</p>
+  <p>⭐ Star this repository if you found it helpful!</p>
+</div>
