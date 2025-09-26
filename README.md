@@ -4,6 +4,18 @@
 
 Mocklet is a feature-rich mobile application that empowers users to track cryptocurrency markets, manage their digital portfolios, and stay informed about the latest trends in the crypto world. With real-time data integration, intuitive design, and robust security features, Mocklet provides everything you need for effective cryptocurrency management.
 
+<div align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.ardakoksal.mocklet">
+    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="80"/>
+  </a>
+</div>
+
+---cklet
+
+> _A comprehensive cryptocurrency tracking and portfolio management application built with Flutter_
+
+Mocklet is a feature-rich mobile application that empowers users to track cryptocurrency markets, manage their digital portfolios, and stay informed about the latest trends in the crypto world. With real-time data integration, intuitive design, and robust security features, Mocklet provides everything you need for effective cryptocurrency management.
+
 ---
 
 ## ✨ Key Features
